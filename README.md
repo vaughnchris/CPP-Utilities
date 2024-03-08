@@ -4,6 +4,6 @@ Namespaces providing an assortment of utility constants, functions, and classes.
 
 ## Namespaces
 Utilities
-Container
-File
-DateTime
+* Container
+* File
+* DateTime
