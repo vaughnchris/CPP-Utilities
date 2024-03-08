@@ -185,10 +185,12 @@
   <ItemGroup>
     <ClCompile Include="DateTime.ixx" />
     <ClCompile Include="DateTimeFormats.cpp" />
+    <ClCompile Include="SingleLinkedCircularList.cpp" />
     <ClCompile Include="UtilitiesTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DateTimeFormats.h" />
+    <ClInclude Include="SingleLinkedCircularList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

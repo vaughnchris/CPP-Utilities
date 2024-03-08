@@ -6,19 +6,31 @@
 #define POINTERS_DATETIMEFORMATS_H
 #include <iostream>
 #include <string>
-
+#include <ctime>
 using namespace std;
 namespace Utilities {
     class DateTimeFormats {
     public:
+        enum class PeriodUnits {
+			Seconds,
+			Minutes,
+			Hours,
+			Days,
+			Weeks,
+			Months,
+			Years
+		};
         enum class Format {
             Short,
-            Long
+            Medium,
+            Long,
+            Full
         };
         enum class DateSeperators {
             Slash,
             Dash,
-            Dot
+            Dot,
+            Space
         };
         enum class TimeFormat {
             TwelveHour,
@@ -28,7 +40,9 @@ namespace Utilities {
             Day,
             Month,
             Year,
-            DayOfMonth
+            DayOfMonth,
+            WeekOfYear,
+            DayOfYear
         };
         //returns a readable string of the current time
         // composite
@@ -53,9 +67,14 @@ namespace Utilities {
         static string PartialDate(DatePart part);
         static void ParseDate(string& day, string& dayOfMonth,
             string& month, string& year, string& time);
+        static string DateTimeDiff(tm first, tm second, 
+            PeriodUnits precision);
+        static int DateTimeDiffByPeriod(tm first, tm second, 
+            			PeriodUnits precision);
+        static string DayOfWeek(int day, int month, int year);
     private:
         static string getTimeNow();
-        static tm* getTimeStruct();
+        static tm getTimeStruct();
         static string getDayFullString(string day);
         static string getMonthFullString(string month);
     };

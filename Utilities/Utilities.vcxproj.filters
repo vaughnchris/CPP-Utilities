@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="containers">
+      <UniqueIdentifier>{d3586ea0-aceb-4412-8e71-1d8ab7d65ba7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UtilitiesTest.cpp">
@@ -24,10 +27,16 @@
     <ClCompile Include="DateTime.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SingleLinkedCircularList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DateTimeFormats.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleLinkedCircularList.h">
+      <Filter>containers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
