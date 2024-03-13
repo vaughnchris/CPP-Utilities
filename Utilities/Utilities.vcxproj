@@ -183,14 +183,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DateTime.ixx" />
+    <ClCompile Include="CollectionBase.cpp" />
     <ClCompile Include="DateTimeFormats.cpp" />
     <ClCompile Include="SingleLinkedCircularList.cpp" />
+    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="StackOfInts.cpp" />
     <ClCompile Include="UtilitiesTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CollectionBase.h" />
     <ClInclude Include="DateTimeFormats.h" />
     <ClInclude Include="SingleLinkedCircularList.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="StackOfInts.h" />
+    <ClInclude Include="TestDateTimeFormat.h" />
+    <ClInclude Include="TestStack.h" />
+    <ClInclude Include="TestStackOfInts.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

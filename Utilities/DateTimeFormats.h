@@ -1,9 +1,7 @@
 //
 // Created by Christopher Vaughn on 3/6/24.
 //
-
-#ifndef POINTERS_DATETIMEFORMATS_H
-#define POINTERS_DATETIMEFORMATS_H
+#ifndef DT_FORMATS_H
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -72,13 +70,13 @@ namespace Utilities {
         static int DateTimeDiffByPeriod(tm first, tm second, 
             			PeriodUnits precision);
         static string DayOfWeek(int day, int month, int year);
+        static int DayOfYear(int day, int month, int year);
+        static int DayOfYear();
     private:
         static string getTimeNow();
         static tm getTimeStruct();
         static string getDayFullString(string day);
         static string getMonthFullString(string month);
     };
-
-} // Utilities
-
-#endif //POINTERS_DATETIMEFORMATS_H
+} 
+#endif // !DT_FORMATS_H

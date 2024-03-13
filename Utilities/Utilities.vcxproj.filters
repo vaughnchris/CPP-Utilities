@@ -24,10 +24,16 @@
     <ClCompile Include="DateTimeFormats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DateTime.ixx">
+    <ClCompile Include="SingleLinkedCircularList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SingleLinkedCircularList.cpp">
+    <ClCompile Include="Stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectionBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StackOfInts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -37,6 +43,24 @@
     </ClInclude>
     <ClInclude Include="SingleLinkedCircularList.h">
       <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectionBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDateTimeFormat.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestStack.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackOfInts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestStackOfInts.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

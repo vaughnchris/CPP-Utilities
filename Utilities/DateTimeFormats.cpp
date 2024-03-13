@@ -1,7 +1,7 @@
 //
 // Created by Christopher Vaughn on 3/6/24.
 //
-
+#ifndef DT_FORMATS_CPP
 #include "DateTimeFormats.h"
 using namespace std;
 namespace Utilities {
@@ -182,13 +182,25 @@ namespace Utilities {
     }
     string DateTimeFormats::DayOfWeek(const int day, const int month, const int year)
     {
-        tm date;
+        
+        struct tm date = { 0 };
         date.tm_year = year - 1900;
         date.tm_mon = month - 1;
         date.tm_mday = day;
+        mktime(&date);
         time_t t;
         localtime_s(&date, &t);
         return getDayFullString(to_string(date.tm_wday));
+    }
+    int DateTimeFormats::DayOfYear(int day, int month, int year)
+    {
+        tm date = getTimeStruct();
+        return date.tm_yday;
+    }
+    int DateTimeFormats::DayOfYear()
+    {
+        tm date = getTimeStruct();
+        return date.tm_yday;
     }
     void DateTimeFormats::ParseDate(string& day, 
         string& dayOfMonth,string& month, string& year, 
@@ -286,3 +298,4 @@ namespace Utilities {
         return fullMonth;
     }
 }; // Utilities
+#endif
